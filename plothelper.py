@@ -15,6 +15,16 @@ def plotImageWithNoPaddingAndSave(image, filename, axes='off', grid=False, pad_i
     ax.xaxis.set_major_locator(plt.NullLocator())
     ax.yaxis.set_major_locator(plt.NullLocator())
     plt.savefig(filename, bbox_inches='tight', transparent=True, pad_inches=pad_inches)
+    
+    
+ def plot_3d(data, save_path=None, display_plot=False grid=True, figsize=None):
+    """
+    :param data: Data to plot should be of size (nx3)
+                n - number of rows or data samples
+    :param save_path: path to save the plotted data
+    :paran display_plot: bol (if True) will display the plot
+    """
+    pass
 
 
 if __name__=="__main__":
